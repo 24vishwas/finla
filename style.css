@@ -181,7 +181,7 @@ li {
 
 .menu-icon {
     display: none;
-    width: 35px;
+    width: 25px;
 }
 .menu-icon img, .menu-close-icon img{   
     width: 100%;
@@ -429,7 +429,7 @@ li {
 .section-name{
     font-size: 38px;
     font-weight: 700;
-    color: var(--blue1);
+    color: var(--black);
 }
 .about-section .section-name{
     color: var(--black);
