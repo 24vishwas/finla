@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vivin Engineering and Constructions</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <navbar class="navbar-section">
+
+            <div class="logo">
+                <a href="index.html">
+                   
+                    <img src="./assets/logo.svg" alt="Vivin log">
+                </a>
+            </div>
+
+            <li class="menu-icon">
+                <img src="./assets/menu.svg" onclick="toggleFunction()" alt="menu-icon">
+            </li>
+            <ul class="nav-container" id="topnav">
+                <li class="menu-close-icon">
+                    <img src="./assets/close.svg" onclick="toggleFunction()" alt="menu-icon">
+                </li>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="./index.html#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="./index.html#collaboration">Collaborations</a>
+                </li>
+                <li>
+                    <a href="./index.html#Strenghts">Strenghts</a>
+                </li>
+                <li>
+                    <a href="team.html">Team</a>
+                </li>
+                <li>
+                    <a href="./index.html#Testimonials">Testimonials</a>
+                </li>
+                <li>
+                    <a href="./index.html#contact">contact</a>
+                </li>
+                <li>
+                    <a href="tel:918296359759">Call Now</a>
+                </li>
+
+                <!-- <li><a href="#why-us"></a></li> -->
+                <!-- <li><a href="#contact">Locations</a></li> -->
+            </ul>
+        </navbar>
+    </nav>
+    <section class="project-hero-section">
+        <div class="hero-container slider1" id="slider1">
+            <div class="wrapper">
+                <div id="slides" class="slides">
+                    
+                    <span class="slide">
+                        <div class="hero">
+                            <div class="img-wrapper">
+                                <img src="./assets/guest-house/Guest-House-16.webp" alt="Hall Corridor" onclick="openLightbox('./assets/guest-house/Guest-House-16.webp')">
+                            </div>
+                        </div>
+                    </span>
+                    <span class="slide">
+                        <div class="hero">
+                            <div class="img-wrapper">
+                                <img src="./assets/guest-house/Guest-House-17.webp" alt="Hall Corridor" onclick="openLightbox('./assets/guest-house/Guest-House-17.webp')">
+                            </div>
+                        </div>
+                    </span>
+                    <span class="slide">
+                        <div class="hero">
+                            <div class="img-wrapper">
+                                <img src="./assets/guest-house/Guest-House-18.webp" alt="Hall Corridor" onclick="openLightbox('./assets/guest-house/Guest-House-18.webp')">
+                            </div>
+                        </div>
+                    </span>
+                    <span class="slide">
+                        <div class="hero">
+                            <div class="img-wrapper">
+                                <img src="./assets/guest-house/Guest-House-19.webp" alt="Hall Corridor" onclick="openLightbox('./assets/guest-house/Guest-House-19.webp')">
+                            </div>
+                        </div>
+                    </span>
+                    <span class="slide">
+                        <div class="hero">
+                            <div class="img-wrapper">
+                                <img src="./assets/guest-house/Guest-House-20.webp" alt="Hall Corridor" onclick="openLightbox('./assets/guest-house/Guest-House-20.webp')">
+                            </div>
+                        </div>
+                    </span>
+                  
+                    
+                </div>
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+            </div>
+            <button id="prev" class="control prev" aria-label="previous"></button>
+            <button id="next" class="control next" aria-label="next"></button>
+        </div>
+    </section>
+    <!-- <button class=" video-btn hero-btn "><a href="#">Book a Video Call</a></button> -->
+    <footer id="contact">
+        <div class="footer-container ">
+            <ul class="footer-wrapper">
+                <li class="footer-item footer-about">
+                    <img src="./assets/logo.svg" alt="vivin logo">
+                    <p>
+                        As the name suggests, we are VIVIN, and we always think about winning as a team. At VIVIN, we embody the Dharma of collective success, ensuring that together, we win.
+                    </p>
+                    <div class="logo-wrapper">
+                        <a href="#"><img src="./assets/fb.svg" alt="facebook logo"></a>
+                        <a href="#"><img src="./assets/Twitter.svg" alt="facebook logo"></a>
+                        <a href="#"><img src="./assets/LinkedIn.svg" alt="facebook logo"></a>
+                        <a href="#"><img src="./assets/Insta.svg" alt="facebook logo"></a>
+                    </div>
+                </li>
+                <li class="footer-item">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="./index.html#projects">Projects</a></li>
+                        <li><a href="./index.html#Testimonials">Testimonials</a></li>
+                        <li><a href="./index.html#collaboration">Collaborations</a></li>
+                        <li><a href="./index.html#Testimonials">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                
+                    </ul>
+                </li>
+    
+                <li class="footer-item">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="tel:+919845123886"><div class="icon-wrapper"> <img src="./assets/phone-1.png" alt="image"></div>+91 9845123886</a></li>
+                        <li><a href="tel:919036005666 "><div class="icon-wrapper"> <img src="./assets/phone-1.png" alt="image"></div>+91 9036005666</a></li>
+                        <li><a href="tel:919481068476 "><div class="icon-wrapper"> <img src="./assets/phone-1.png" alt="image"></div>+91 9481068476</a></li>
+                        
+                        <li><a href="mailto:diwakar@vivingroups.com"><div class="icon-wrapper"> <img src="./assets/mail-1.png" alt="image"></div> diwakar@vivingroups.com</a></li>
+                        <li><a href=""><div class="icon-wrapper"> <img src="./assets/locatioin-1.png" alt="image"></div>
+                            17/E, NS Road, Chamundipuram,   
+                            <br>7th Block, KR Mohalla
+                            <br>Vidyaranyapura, Mysuru, Karnataka 570004</a></li>
+                        
+                        <!-- <li><a href="">Gallery</a></li> -->
+                    </ul>
+                </li>
+                <li class="footer-item newsletter"> 
+                    <h3>Map Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.410066126808!2d76.64721017493169!3d12.288148087967915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf700ecc460649%3A0x3e89b037c7281cee!2sVIVIN%20Engineering%20and%20Contracting!5e0!3m2!1sen!2sin!4v1724992349572!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   
+                </li>
+                <li class="footer-item"> 
+                    <div class="footer-btn">
+                        <!-- <a href="#"><img src="./assets/Chat.png" alt="image"></a> -->
+                        <a href="#navbar"><img src="./assets/backtohome.png" alt="image"></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
