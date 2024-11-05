@@ -304,7 +304,7 @@ li {
     position: relative;
     height: calc(100vh - 100px);
     background-image: url(./assets/homepage-hero-bg.png);
-    background-position: center;
+    background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -343,7 +343,7 @@ li {
     line-height: 20px;
     text-align: justify;
     margin-bottom:30px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 27.28px;
     max-width: 350px;
     color: white;
@@ -356,7 +356,7 @@ li {
 }
 @media (max-width:992px) {
     .hero-section{
-        height: 70vh;
+        height: 100vh;
     }
     .hero-container{
         flex-direction: column-reverse;
@@ -376,6 +376,9 @@ li {
 @media (max-width:500px) {
     .hero-content h1{
         font-size: 2.2rem;
+    }
+    .hero-content p{
+        font-size: 14px;
     }
 }
 /* hero-section end */
@@ -522,6 +525,10 @@ li {
 @media (max-width: 500px){
 .about-content h1 {
     font-size: 2.2rem;
+}
+.section-name{
+    text-align: center;
+    display: block;
 }
 }
 /* about section end */
@@ -749,8 +756,10 @@ footer::after{
     color: var(--white-font);
 }
 
-.footer-item h2{
+.footer-item h3{
     /* width: min-content; */
+    color: var(--red);
+    font-size: 25px;
     margin-bottom: 10px;
     font-weight: 500;
 }
@@ -1361,9 +1370,42 @@ footer::after{
    align-items: center;
    width: fit-content;
    margin-inline: auto;
-
+}
+.commercial-interiors{
+    padding-block: 5%;
+    position: relative;
+    color: var(--white-font);
 }
 
+.commercial-interiors::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.376);
+    z-index: -1;
+}
+.commercial-interiors::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/commercial-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+.commercial-interiors .primary-btn{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-inline: auto;
+ }
 /* achivement-section */
 .achivements-section{
     padding-block: 5%;
@@ -1440,4 +1482,11 @@ footer::after{
         margin-top: 0;
     }
     
+}
+.copyright{
+    padding-block: 20px;
+    text-align: center;
+    color: var(--white-font);
+    background-color: var(--black);
+    padding-inline: 10px;
 }
