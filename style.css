@@ -329,8 +329,8 @@ li {
     color: var(--black-font);
 }
 .hero-content h1{
-    font-size: 3rem;
-    line-height: 80px;
+    font-size: 2.5rem;
+    /* line-height: 80px; */
     margin-block: 20px;
     color: white;
     max-width: 400px;
@@ -1400,12 +1400,71 @@ footer::after{
     background-size: cover;
     z-index: -2;
 }
-.commercial-interiors .primary-btn{
+.institutional-interiors{
+    padding-block: 5%;
+    position: relative;
+    color: var(--white-font);
+}
+
+.institutional-interiors::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.376);
+    z-index: -1;
+}
+.institutional-interiors::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/institutional-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+.Hospital-interiors{
+    padding-block: 5%;
+    position: relative;
+    color: var(--white-font);
+}
+
+.Hospital-interiors::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.376);
+    z-index: -1;
+}
+.Hospital-interiors::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/Hospital-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+.res-interiors-container .primary-btn{
     display: flex;
     align-items: center;
     width: fit-content;
     margin-inline: auto;
  }
+
 /* achivement-section */
 .achivements-section{
     padding-block: 5%;
