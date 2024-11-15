@@ -19,7 +19,7 @@
 
             <div class="logo">
                 <a href="index.html">
-                    <img src="./assets/logo-w.png" alt="Vivin log">
+                    <img src="./assets/logo-w.svg" alt="Vivin log">
                 </a>
                 <h3>Finla’s Ambience</h3>
             </div>
@@ -54,13 +54,13 @@
     <section class="ambience-hero">
         <h1>Where Style Meets Comfort.</h1>
         <div class="ambience-hero-card">
-                <span><img src="assets/logo-sm.png" alt="image"> <h4>Finla's Ambience</h4></span>
+                <span><img src="assets/logo-sm.webp" alt="image"> <h4>Finla's Ambience</h4></span>
                 <p>
                     At Finla's Ambience, we, standing as the testimony for the Quality and range of products with timely Delivery, we are catering to the needs of All Modular Kitchens and furniture by providing turnkey solutions starting from conceptual designs till to the timely handing over of the Projects adopting all the advanced technologies and recent innovations in the Industry
                 </p>
         </div>
         <div class="down-arrow">
-            <img src="./assets/down-arrow.png" alt="down-arrow">
+            <img src="./assets/arrow-down.svg" alt="down-arrow">
         </div>
     </section>
     <section class="res-interiors">
@@ -68,13 +68,13 @@
             <span class="ambience-section-name">Residential Interiors</span>
             <div class="res-interiors-wrapper">
                 <div class="res">
-                    <img src="./assets/res-1.png" alt="image">
+                    <img src="./assets/res-1.webp" alt="image">
                 </div>
                 <div class="res">
-                    <img src="./assets/res-2.png" alt="image">
+                    <img src="./assets/res-2.webp" alt="image">
                 </div>
                 <div class="res">
-                    <img src="./assets/res-3.png" alt="image">
+                    <img src="./assets/res-3.webp" alt="image">
                 </div>
             </div>
             <a href="#" class="primary-btn">Call Now</a>
@@ -85,87 +85,36 @@
             <span class="ambience-section-name">Commercial Interiors</span>
             <div class="res-interiors-wrapper">
                 <div class="res">
-                    <img src="./assets/commercial-1.png" alt="image">
+                    <img src="./assets/projects/3.webp" alt="image" onclick="openLightbox('./assets/projects/3.webp')">
+                    <h3>Hospital Interiors</h3>
                 </div>
                 <div class="res">
-                    <img src="./assets/commercial-2.png" alt="image">
+                    <img src="./assets/projects/5.webp" alt="image" onclick="openLightbox('./assets/projects/5.webp')">
+                    <h3>Hospitality Interiors</h3>
                 </div>
                 <div class="res">
-                    <img src="./assets/commercial-3.png" alt="image">
+                    <img src="./assets/projects/6.webp" alt="image" onclick="openLightbox('./assets/projects/6.webp')">
+                    <h3>Institutional Interiors</h3>
                 </div>
                 <div class="res">
-                    <img src="./assets/commercial-4.png" alt="image">
+                    <img src="./assets/projects/2.webp" alt="image" onclick="openLightbox('./assets/projects/2.webp')">
+                    <h3>Commercial Interiors</h3>
                 </div>
             </div>
             <a href="#" class="primary-btn">Call Now</a>
         </div>
     </section>
-    <section class="institutional-interiors">
-        <div class="res-interiors-container container">
-            <span class="ambience-section-name">Institutional Interiors</span>
-            <div class="res-interiors-wrapper">
-                <div class="res">
-                    <img src="./assets/commercial-1.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-2.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-3.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-4.png" alt="image">
-                </div>
-            </div>
-            <a href="#" class="primary-btn">Call Now</a>
-        </div>
-    </section>
-    <section class="Hospital-interiors">
-        <div class="res-interiors-container container">
-            <span class="ambience-section-name">Hospital Interiors</span>
-            <div class="res-interiors-wrapper">
-                <div class="res">
-                    <img src="./assets/commercial-1.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-2.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-3.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-4.png" alt="image">
-                </div>
-            </div>
-            <a href="#" class="primary-btn">Call Now</a>
-        </div>
-    </section>
-    <section class="commercial-interiors">
-        <div class="res-interiors-container container">
-            <span class="ambience-section-name">Hospitality Interiors</span>
-            <div class="res-interiors-wrapper">
-                <div class="res">
-                    <img src="./assets/commercial-1.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-2.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-3.png" alt="image">
-                </div>
-                <div class="res">
-                    <img src="./assets/commercial-4.png" alt="image">
-                </div>
-            </div>
-            <a href="#" class="primary-btn">Call Now</a>
-        </div>
-    </section>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+   
     <section class="achivements-section">
         <div class="achivements-container container">
            
             <div class="achivements-wrapper">
                 <div class="achivements">
-                    <img src="./assets/logo-w.png" alt="image">
+                    <img src="./assets/logo-w.svg" alt="image">
                 </div>
                 <div class="achivements">
                     <p>Completed <br> Projects</p>
@@ -198,10 +147,7 @@
     <footer id="contact">
         <div class="footer-container ">
             <ul class="footer-wrapper">
-                <li class="footer-item footer-about">
-                    <img src="./assets/logo-l.png" alt="vivin logo">
-                  
-                </li>
+               
                 <li class="footer-item">
                     <h3>Quick Links</h3>
                     <ul>
